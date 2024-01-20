@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+nav{
+  background-color: gray;
+  height: 5rem;
+  max-height: 10vh;
+  min-height: 8vh;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  overflow: hidden;
+}
+
+.center-nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-logo{
+  width: 4vw;
+}
+
+.nav-content{
+  background-color: white;
+  margin: 0 5px 0 5px;
+  align-self: center;
+}
+
+.nav-button{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
