@@ -87,8 +87,13 @@ nav{
     padding:1rem 1rem 5rem 1rem;
   }
 
+  #desktop-layout{
+    margin-top: 7rem;
+  }
+
   nav{
-    position:;
+    position:fixed;
+    top:0;
   }
 
 }
