@@ -1,14 +1,16 @@
 body{
-  margin: 0;
+  margin: 0 0 1000px 0;
   padding: 0;
   background-color: black;
+  color: white;
 }
 
 nav{
   background-color: gray;
   height: 5rem;
-  max-height: 10vh;
-  min-height: 8vh;
+  max-height: 6rem;
+  min-height: 1rem;
+  width: 100%;
   display: grid;
   grid-template-columns: 20% 60% 20%;
   overflow: hidden;
@@ -21,6 +23,7 @@ nav{
 
 .nav-logo{
   width: 4vw;
+  min-width: 4rem;
 }
 
 .nav-content{
@@ -33,4 +36,59 @@ nav{
   display: flex;
   justify-content: center;
   position: absolute;
+}
+
+.left-nav{
+  display: flex;
+  align-items: center;
+}
+
+.box-general{
+  background-color: gray;
+  overflow:hidden;
+}
+
+@media only screen and (max-width: 459px) {
+
+  nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:0 1vw 0 1vw;
+  }
+
+  .center-nav{
+    display: none;
+  }
+
+  .right-nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #hamburger{
+  }
+
+  .box-general{
+    margin: 2vh 3vw 0 3vw;
+    padding:1rem 1rem 2rem 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 460px) {
+
+  #hamburger{
+    display: none;
+  }
+
+  .box-general{
+    margin: 2vh 20vw 0 20vw;
+    padding:1rem 1rem 5rem 1rem;
+  }
+
+  nav{
+    position:;
+  }
+
 }
