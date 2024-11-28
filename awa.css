@@ -1,0 +1,16 @@
+#item1{
+  grid-area: item1;
+}
+
+#item2{
+  grid-area: item2;
+}
+
+main{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 15% 85%;
+  grid-template-areas:
+  "item1 item2"
+  ;
+}

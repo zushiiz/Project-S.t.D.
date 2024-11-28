@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+#content {
+  margin-top: 10000px;
+  background-color: coral;
+}
+</style>
+
+<body>
+  
+<button onclick="myFunction()">Scroll</button>
+
+  <h1 id="content">
+    <p>stuff</p>
+  </h1>
+
+<script>
+function myFunction() {
+  const element = document.getElementById("content");
+  element.scrollIntoView();
+}
+</script>
+
+</body>
+</html>

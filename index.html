@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Projecc</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
   </head>
 
   <body>
@@ -54,9 +55,49 @@
 
     </div>
 
+    <div class="carousel-slider">
+
+      <div class="slide">
+        <img src="assets/img/img_nature_wide.jpg" alt="nature" style="width:100%">
+        <div class="slider-text">caption 1</div>
+      </div>
+      <div class="slide">
+        <img src="assets/img/img_nature_wide.jpg" alt="nature" style="width:100%">
+        <div class="slider-text">caption 2</div>
+      </div>
+      <div class="slide">
+        <img src="assets/img/img_nature_wide.jpg" alt="nature" style="width:100%">
+        <div class="slider-text">caption 3</div>
+      </div>
+      <div class="slide">
+        <img src="assets/img/img_nature_wide.jpg" alt="nature" style="width:100%">
+        <div class="slider-text">caption 4</div>
+      </div>
+      <div class="slide">
+        <img src="assets/img/img_nature_wide.jpg" alt="nature" style="width:100%">
+        <div class="slider-text">caption 5 </div>
+      </div>      
+
+      <a class="left" onclick="nextSlide(-1)">❮</a>
+      <a class="right" onclick="nextSlide(1)">❯</a>
+    </div>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+  
     </main>
 
     
-    
+    <a href="carousel.html">Link</a>
+
+    <script src="carousel.js"></script>
+
   </body>
+
+
 </html>
